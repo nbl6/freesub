@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - lei",
-        "🇧🇷 BR 02 - lei"
+        "🇰🇿 KZ 01 - lei",
+        "🇰🇿 KZ 02 - lei"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - lei",
-        "🇧🇷 BR 02 - lei"
+        "🇰🇿 KZ 01 - lei",
+        "🇰🇿 KZ 02 - lei"
       ],
       "url": "https://www.google.com/generate_204"
     },
