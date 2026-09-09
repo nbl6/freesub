@@ -17,67 +17,65 @@ proxies:
 - name: 🇰🇷 韩国 (South Korea) 02 - lei
   type: ss
   server: 141.164.45.187
-  port: 9101
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 03 - lei
-  type: ss
-  server: 141.164.45.187
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 04 - lei
-  type: ss
-  server: 141.164.45.187
   port: 6679
   cipher: aes-256-gcm
   password: TEzjfAYq2IjtuoS
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 05 - lei
+- name: 🇰🇷 韩国 (South Korea) 03 - lei
   type: ss
   server: 141.164.45.187
-  port: 8119
+  port: 8091
   cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  password: PCnnH6SQSnfoS27
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 06 - lei
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 07 - lei
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 08 - lei
+- name: 🇰🇷 韩国 (South Korea) 04 - lei
   type: ss
   server: 141.164.45.187
   port: 9090
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 09 - lei
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+- name: 🇰🇷 韩国 (South Korea) 05 - lei
+  type: ss
+  server: 141.164.45.187
+  port: 5001
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: true
+- name: 🇰🇷 韩国 (South Korea) 06 - lei
+  type: ss
+  server: 141.164.45.187
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 07 - lei
+  type: vless
+  server: 130.94.29.111
+  port: 2087
+  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /e17586a75123
     headers:
-      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 10 - lei
+      Host: 130.94.29.111
+- name: 🇰🇷 韩国 (South Korea) 08 - lei
+  type: vless
+  server: 130.94.29.111
+  port: 2087
+  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /e17586a75123
+    headers:
+      Host: 130.94.29.111
+- name: 🇰🇷 韩国 (South Korea) 09 - lei
   type: vless
   server: 130.94.29.111
   port: 2087
@@ -104,7 +102,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - lei
   - 🇰🇷 韩国 (South Korea) 08 - lei
   - 🇰🇷 韩国 (South Korea) 09 - lei
-  - 🇰🇷 韩国 (South Korea) 10 - lei
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,6 +116,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - lei
   - 🇰🇷 韩国 (South Korea) 08 - lei
   - 🇰🇷 韩国 (South Korea) 09 - lei
-  - 🇰🇷 韩国 (South Korea) 10 - lei
 rules:
 - MATCH,PROXIES
