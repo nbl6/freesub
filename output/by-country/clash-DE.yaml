@@ -5,23 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - lei
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 02 - lei
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 03 - lei
   type: vless
   server: 163.8.195.241
   port: 2087
@@ -34,20 +17,93 @@ proxies:
     path: /29c8fed7ca22
     headers:
       Host: 163.8.195.241
+- name: 🇩🇪 德国 (Germany) 02 - lei
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 03 - lei
+  type: vmess
+  server: 51.89.41.22
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇩🇪 德国 (Germany) 04 - lei
+  type: vmess
+  server: 51.89.41.22
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 05 - lei
+  type: ss
+  server: germ6.velqixa.ir
+  port: 8390
+  cipher: chacha20-ietf-poly1305
+  password: BKoK3EPN2TwJUf0IBOPQSA
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - lei
   type: vless
-  server: 82.24.203.20
+  server: vnet.korluma.ir
   port: 2087
-  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
+  uuid: fa80d79a-0410-4e1c-8bc1-1f855e794860
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: -TYsz4fk-n5bQw9DW0fPxhXiwnXFq61rSFkSpjcLrVY
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 07 - lei
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 08 - lei
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 09 - lei
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - lei
+  type: vless
+  server: 94.156.232.254
+  port: 443
+  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf6.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /fd5ba98a3970
+    path: /cdn/v3/live
     headers:
-      Host: 82.24.203.20
-- name: 🇩🇪 德国 (Germany) 05 - lei
+      Host: cf6.rumedia-cdn.com
+- name: 🇩🇪 德国 (Germany) 11 - lei
   type: vless
   server: 91.107.190.63
   port: 8080
@@ -60,88 +116,33 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 91.107.190.63
-- name: 🇩🇪 德国 (Germany) 06 - lei
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 07 - lei
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 08 - lei
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: 163.8.195.241
-- name: 🇩🇪 德国 (Germany) 09 - lei
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: 163.8.195.241
-- name: 🇩🇪 德国 (Germany) 10 - lei
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 11 - lei
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
 - name: 🇩🇪 德国 (Germany) 12 - lei
-  type: vless
-  server: 81.95.4.189
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 13 - lei
+  type: ss
+  server: 2.58.81.221
   port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 14 - lei
+  type: vless
+  server: de3.bexait.ir
+  port: 2434
+  uuid: 999a8e4e-f13a-411e-b0db-e7753d982efd
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 13 - lei
+  reality-opts:
+    public-key: yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0
+  servername: icloud.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 15 - lei
   type: vless
   server: 163.8.195.241
   port: 2087
@@ -154,45 +155,35 @@ proxies:
     path: /29c8fed7ca22
     headers:
       Host: 163.8.195.241
-- name: 🇩🇪 德国 (Germany) 14 - lei
+- name: 🇩🇪 德国 (Germany) 16 - lei
   type: vmess
-  server: 51.89.41.22
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  server: 185.233.203.113
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 15 - lei
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 德国 (Germany) 17 - lei
   type: vless
-  server: 82.24.203.20
+  server: 163.8.195.241
   port: 2087
-  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /fd5ba98a3970
+    path: /29c8fed7ca22
     headers:
-      Host: 82.24.203.20
-- name: 🇩🇪 德国 (Germany) 16 - lei
-  type: vless
-  server: 91.107.179.8
-  port: 15003
-  uuid: 69d8dc73-20ff-4241-bdd8-a9d6d07553b6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 17 - lei
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
+      Host: 163.8.195.241
 - name: 🇩🇪 德国 (Germany) 18 - lei
   type: vless
   server: 94.156.232.254
@@ -209,55 +200,19 @@ proxies:
       Host: cf6.rumedia-cdn.com
 - name: 🇩🇪 德国 (Germany) 19 - lei
   type: vless
-  server: 82.24.203.20
-  port: 2087
-  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fd5ba98a3970
-    headers:
-      Host: 82.24.203.20
-- name: 🇩🇪 德国 (Germany) 20 - lei
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: '%2F%3F--v2rayNplus--v2rayNplus--v2rayNplus--'
-- name: 🇩🇪 德国 (Germany) 21 - lei
-  type: vless
-  server: 94.156.232.254
+  server: rubifen.adaspoloandco.com
   port: 443
-  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf6.rumedia-cdn.com
+  servername: rubifen.adaspoloandco.com
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /GOrbEh
     headers:
-      Host: 94.156.232.254
-- name: 🇩🇪 德国 (Germany) 22 - lei
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 23 - lei
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 20 - lei
   type: vless
   server: aljha.typeshoes.online
   port: 443
@@ -271,7 +226,54 @@ proxies:
     path: /kdi
     headers:
       Host: aljha.typeshoes.online
+- name: 🇩🇪 德国 (Germany) 21 - lei
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 22 - lei
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 23 - lei
+  type: vmess
+  server: 185.230.190.29
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
 - name: 🇩🇪 德国 (Germany) 24 - lei
+  type: vless
+  server: 91.107.179.8
+  port: 15003
+  uuid: 69d8dc73-20ff-4241-bdd8-a9d6d07553b6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 25 - lei
   type: vless
   server: 91.107.188.158
   port: 8080
@@ -284,64 +286,112 @@ proxies:
     path: /?ed
     headers:
       Host: 91.107.188.158
-- name: 🇩🇪 德国 (Germany) 25 - lei
+- name: 🇩🇪 德国 (Germany) 26 - lei
+  type: vless
+  server: de11.bexait.ir
+  port: 2434
+  uuid: 999a8e4e-f13a-411e-b0db-e7753d982efd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0
+  servername: icloud.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 27 - lei
+  type: vmess
+  server: 108.165.236.142
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 德国 (Germany) 28 - lei
+  type: vmess
+  server: 178.248.75.57
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇩🇪 德国 (Germany) 29 - lei
   type: ss
   server: 2.56.126.121
   port: 3
   cipher: chacha20-ietf-poly1305
   password: hcPtVDnxZHumuyqGtiOGtA
   udp: true
-- name: 🇩🇪 德国 (Germany) 26 - lei
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 27 - lei
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
-- name: 🇩🇪 德国 (Germany) 28 - lei
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 29 - lei
-  type: vmess
-  server: 51.75.74.253
-  port: 10000
-  uuid: 678a8a2c-aca8-11f1-b342-afa6288e22f8
-  alterId: 0
-  cipher: auto
+- name: 🇩🇪 德国 (Germany) 30 - lei
+  type: vless
+  server: 82.24.203.20
+  port: 2087
+  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vpnjantit
+    path: /fd5ba98a3970
     headers:
-      Host: ''
-- name: 🇩🇪 德国 (Germany) 30 - lei
+      Host: 82.24.203.20
+- name: 🇩🇪 德国 (Germany) 31 - lei
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 32 - lei
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: '%2F%3F--v2rayNplus--v2rayNplus--v2rayNplus--'
+- name: 🇩🇪 德国 (Germany) 33 - lei
   type: ss
   server: 185.226.172.8
   port: 8008
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 31 - lei
-  type: ss
-  server: 2.58.81.221
+- name: 🇩🇪 德国 (Germany) 34 - lei
+  type: vless
+  server: 81.95.4.189
   port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
-- name: 🇩🇪 德国 (Germany) 32 - lei
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 35 - lei
   type: vless
   server: 94.156.232.254
   port: 443
@@ -354,19 +404,21 @@ proxies:
   ws-opts:
     path: /cdn/v3/live
     headers:
-      Host: cf6.rumedia-cdn.com
-- name: 🇩🇪 德国 (Germany) 33 - lei
+      Host: 94.156.232.254
+- name: 🇩🇪 德国 (Germany) 36 - lei
   type: vless
-  server: 93.152.217.41
-  port: 40443
-  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
+  server: 151.242.189.40
+  port: 443
+  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
-  servername: deepl.com
-  client-fingerprint: chrome
+  servername: web-socket.tgdaosheng.ggff.net
+  network: ws
+  ws-opts:
+    path: MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN
+    headers:
+      Host: web-socket.tgdaosheng.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -405,6 +457,9 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 31 - lei
   - 🇩🇪 德国 (Germany) 32 - lei
   - 🇩🇪 德国 (Germany) 33 - lei
+  - 🇩🇪 德国 (Germany) 34 - lei
+  - 🇩🇪 德国 (Germany) 35 - lei
+  - 🇩🇪 德国 (Germany) 36 - lei
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -443,5 +498,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 31 - lei
   - 🇩🇪 德国 (Germany) 32 - lei
   - 🇩🇪 德国 (Germany) 33 - lei
+  - 🇩🇪 德国 (Germany) 34 - lei
+  - 🇩🇪 德国 (Germany) 35 - lei
+  - 🇩🇪 德国 (Germany) 36 - lei
 rules:
 - MATCH,PROXIES
