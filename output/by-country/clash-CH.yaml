@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - lei
   type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇨🇭 CH 02 - lei
-  type: vless
   server: 104.18.28.234
   port: 443
   uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
@@ -32,7 +18,7 @@ proxies:
     path: /
     headers:
       Host: netlivpn5505.ffffdsaaa.workers.dev
-- name: 🇨🇭 CH 03 - lei
+- name: 🇨🇭 CH 02 - lei
   type: vless
   server: 188.114.97.6
   port: 8080
@@ -52,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - lei
   - 🇨🇭 CH 02 - lei
-  - 🇨🇭 CH 03 - lei
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - lei
   - 🇨🇭 CH 02 - lei
-  - 🇨🇭 CH 03 - lei
 rules:
 - MATCH,PROXIES
