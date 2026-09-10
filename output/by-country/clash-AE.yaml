@@ -15,23 +15,22 @@ proxies:
   servername: web-socket.tgdaosheng.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.com
+    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
     headers:
       Host: web-socket.tgdaosheng.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 02 - lei
   type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
+    path: /
     headers:
-      Host: web-socket.tgdaosheng.ggff.net
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - lei
   type: vless
   server: 84.235.244.108
@@ -45,47 +44,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - lei
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - lei
-  type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 06 - lei
-  type: vless
-  server: 2.26.91.98
-  port: 1443
-  uuid: fd30c61d-82bf-449c-aa9e-565d0ab64b75
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,9 +52,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - lei
   - 🇦🇪 阿联酋 (UAE) 02 - lei
   - 🇦🇪 阿联酋 (UAE) 03 - lei
-  - 🇦🇪 阿联酋 (UAE) 04 - lei
-  - 🇦🇪 阿联酋 (UAE) 05 - lei
-  - 🇦🇪 阿联酋 (UAE) 06 - lei
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,8 +60,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - lei
   - 🇦🇪 阿联酋 (UAE) 02 - lei
   - 🇦🇪 阿联酋 (UAE) 03 - lei
-  - 🇦🇪 阿联酋 (UAE) 04 - lei
-  - 🇦🇪 阿联酋 (UAE) 05 - lei
-  - 🇦🇪 阿联酋 (UAE) 06 - lei
 rules:
 - MATCH,PROXIES

@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - lei
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
 - name: 🇸🇨 SC 02 - lei
   type: vmess
   server: 156.226.183.181
@@ -27,20 +24,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 03 - lei
-  type: vless
-  server: 104.21.14.116
-  port: 443
-  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-4b5fd4.appelidmymat.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-4b5fd4.appelidmymat.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - lei
   - 🇸🇨 SC 02 - lei
-  - 🇸🇨 SC 03 - lei
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - lei
   - 🇸🇨 SC 02 - lei
-  - 🇸🇨 SC 03 - lei
 rules:
 - MATCH,PROXIES
