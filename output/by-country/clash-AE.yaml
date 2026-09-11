@@ -18,6 +18,13 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - lei
+  type: ss
+  server: 188.208.110.58
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: tunnel-astrovpn_official
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 03 - lei
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -37,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - lei
   - 🇦🇪 阿联酋 (UAE) 02 - lei
+  - 🇦🇪 阿联酋 (UAE) 03 - lei
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - lei
   - 🇦🇪 阿联酋 (UAE) 02 - lei
+  - 🇦🇪 阿联酋 (UAE) 03 - lei
 rules:
 - MATCH,PROXIES
