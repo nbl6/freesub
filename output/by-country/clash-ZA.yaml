@@ -20,13 +20,6 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 03 - lei
   type: ss
-  server: 20.87.212.20
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: IbtRX4cOSjfd8YoI
-  udp: true
-- name: 🇿🇦 ZA 04 - lei
-  type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
@@ -40,7 +33,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - lei
   - 🇿🇦 ZA 02 - lei
   - 🇿🇦 ZA 03 - lei
-  - 🇿🇦 ZA 04 - lei
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,6 +41,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - lei
   - 🇿🇦 ZA 02 - lei
   - 🇿🇦 ZA 03 - lei
-  - 🇿🇦 ZA 04 - lei
 rules:
 - MATCH,PROXIES
