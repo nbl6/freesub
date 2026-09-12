@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇺🇿 UZ 01 - lei
   type: vless
-  server: 104.18.80.149
+  server: 104.24.30.89
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    path: /?ed=2560
     headers:
-      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+      Host: rayan-007.nastaran.dpdns.org
 - name: 🇺🇿 UZ 02 - lei
   type: vless
   server: 189.74.97.47
