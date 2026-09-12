@@ -20,12 +20,48 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - lei
-  type: ss
-  server: 103.136.150.237
-  port: 8388
-  cipher: aes-256-gcm
-  password: KSdf3qeTB5TGlFPn
+  type: vmess
+  server: wwafj5lhl6bi8au9.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wwafj5lhl6bi8au9.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: wwafj5lhl6bi8au9.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - lei
+  type: vmess
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - lei
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +69,8 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - lei
   - 🇭🇰 中国香港 (Hong Kong) 02 - lei
+  - 🇭🇰 中国香港 (Hong Kong) 03 - lei
+  - 🇭🇰 中国香港 (Hong Kong) 04 - lei
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +78,7 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - lei
   - 🇭🇰 中国香港 (Hong Kong) 02 - lei
+  - 🇭🇰 中国香港 (Hong Kong) 03 - lei
+  - 🇭🇰 中国香港 (Hong Kong) 04 - lei
 rules:
 - MATCH,PROXIES
