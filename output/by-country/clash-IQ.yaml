@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 104.21.69.37
+  server: soskeynets-project-4c7950.ez-dc9bbb.workers.dev
   port: 443
   udp: true
   type: vless
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
   tls: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+  servername: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/uWq9DFRgj8BwQiSXmZ46
+    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
