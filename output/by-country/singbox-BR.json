@@ -1,0 +1,291 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "104.21.46.101",
+      "server_port": 2086,
+      "uuid": "4a956dfd-b65a-4846-b6da-c85fc79918a5",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoibW81VDZwNXg5S2IiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0",
+        "headers": {
+          "Host": "green-scene-32df.atalastchance.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 03 - xiaohe",
+      "server": "188.114.97.1",
+      "server_port": 2053,
+      "uuid": "0b3e7958-e5c4-498f-ab21-b49686f95d2d",
+      "tls": {
+        "enabled": true,
+        "server_name": "bold-term-4edd.mbigspot.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "bold-term-4edd.mbigspot.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 04 - xiaohe",
+      "server": "104.21.15.145",
+      "server_port": 2053,
+      "uuid": "dc1e9f00-c064-4870-9bfc-463db50257d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 05 - xiaohe",
+      "server": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev",
+      "server_port": 2053,
+      "uuid": "dc1e9f00-c064-4870-9bfc-463db50257d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 06 - xiaohe",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
+      "tls": {
+        "enabled": true,
+        "server_name": "vip.868068.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "vip.868068.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 07 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "50414e45-4c5f-5a45-5553-e0dfede8abc0",
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/e0dfede8abc0",
+        "headers": {
+          "Host": "xoz60debusrs.lezuwaeiunjs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 08 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-e0dfede8abc0",
+      "tls": {
+        "enabled": true,
+        "server_name": "xoz60debusrs.lezuwaeiunjs.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/e0dfede8abc0",
+        "headers": {
+          "Host": "xoz60debusrs.lezuwaeiunjs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 09 - xiaohe",
+      "server": "104.27.66.130",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-e0dfede8abc0",
+      "tls": {
+        "enabled": true,
+        "server_name": "xoz60debusrs.lezuwaeiunjs.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/e0dfede8abc0fp=chrome",
+        "headers": {
+          "Host": "xoz60debusrs.lezuwaeiunjs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 10 - xiaohe",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "0836463b-214f-4af6-aa85-85a56a62388e",
+      "transport": {
+        "type": "ws",
+        "path": "/8eaZJhRwB5zzDy81",
+        "headers": {
+          "Host": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 11 - xiaohe",
+      "server": "netra-85a0ca.shoameni19.workers.dev",
+      "server_port": 443,
+      "uuid": "20836693-ea23-4f40-a1e7-48a6da897917",
+      "tls": {
+        "enabled": true,
+        "server_name": "netra-85a0ca.shoameni19.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui?ed=2560"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 12 - xiaohe",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "50414e45-4c5f-5a45-5553-e0dfede8abc0",
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/e0dfede8abc0",
+        "headers": {
+          "Host": "xoz60debusrs.lezuwaeiunjs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 13 - xiaohe",
+      "server": "w1z2qhevu1ps.7tzwwhemurss.workers.dev",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-9e9beb922b6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "w1z2qhevu1ps.7tzwwhemurss.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/9e9beb922b6a",
+        "headers": {
+          "Host": "w1z2qhevu1ps.7tzwwhemurss.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 04 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 05 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 06 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 07 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 08 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 09 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 10 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 11 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 12 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 13 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 03 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 04 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 05 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 06 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 07 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 08 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 09 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 10 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 11 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 12 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 13 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

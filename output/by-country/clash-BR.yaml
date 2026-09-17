@@ -1,0 +1,215 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  server: 104.21.46.101
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 4a956dfd-b65a-4846-b6da-c85fc79918a5
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoibW81VDZwNXg5S2IiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
+    headers:
+      Host: green-scene-32df.atalastchance.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  server: 188.114.97.1
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  tls: true
+  servername: bold-term-4edd.mbigspot.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bold-term-4edd.mbigspot.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 04 - xiaohe
+  server: 104.21.15.145
+  port: 2053
+  udp: true
+  type: vless
+  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
+  tls: true
+  servername: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 05 - xiaohe
+  server: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+  port: 2053
+  udp: true
+  type: vless
+  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
+  tls: true
+  servername: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 06 - xiaohe
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  tls: true
+  servername: vip.868068.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: vip.868068.xyz
+- name: 🇧🇷 巴西 (Brazil) 07 - xiaohe
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-e0dfede8abc0
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/e0dfede8abc0
+    headers:
+      Host: xoz60debusrs.lezuwaeiunjs.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 08 - xiaohe
+  server: 104.21.70.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-e0dfede8abc0
+  tls: true
+  servername: xoz60debusrs.lezuwaeiunjs.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/e0dfede8abc0
+    headers:
+      Host: xoz60debusrs.lezuwaeiunjs.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 09 - xiaohe
+  server: 104.27.66.130
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-e0dfede8abc0
+  tls: true
+  servername: xoz60debusrs.lezuwaeiunjs.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/e0dfede8abc0fp=chrome
+    headers:
+      Host: xoz60debusrs.lezuwaeiunjs.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 10 - xiaohe
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  network: ws
+  ws-opts:
+    path: /8eaZJhRwB5zzDy81
+    headers:
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 11 - xiaohe
+  server: netra-85a0ca.shoameni19.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  tls: true
+  servername: netra-85a0ca.shoameni19.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui?ed=2560
+- name: 🇧🇷 巴西 (Brazil) 12 - xiaohe
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-e0dfede8abc0
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/e0dfede8abc0
+    headers:
+      Host: xoz60debusrs.lezuwaeiunjs.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 13 - xiaohe
+  server: w1z2qhevu1ps.7tzwwhemurss.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-9e9beb922b6a
+  tls: true
+  servername: w1z2qhevu1ps.7tzwwhemurss.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/9e9beb922b6a
+    headers:
+      Host: w1z2qhevu1ps.7tzwwhemurss.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 04 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 05 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 06 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 07 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 08 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 09 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 10 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 11 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 12 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 13 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 04 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 05 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 06 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 07 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 08 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 09 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 10 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 11 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 12 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 13 - xiaohe
+rules:
+- MATCH,PROXIES

@@ -6,16 +6,6 @@ log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 94.183.170.135
   port: 443
   udp: true
   type: vless
@@ -25,15 +15,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: cabinet.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: ee1.sferavpn.pro
   port: 443
   udp: true
@@ -43,14 +25,41 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 109.206.241.10
-  port: 449
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 85.158.108.125
+  port: 9462
   udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: 217.60.182.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
   skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  server: 95.85.224.154
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 52ecaf96-9c28-4cad-a132-13898f2bbb29
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E
+    short-id: 8c554321
+  servername: fota-cloud-dn.ospserver.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

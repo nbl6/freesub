@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 188.114.98.16
-  port: 2082
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /rry8le3tt8f3g5j7kr
-    headers:
-      Host: index.harmonica02.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 206.1.97.61
-  port: 13323
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: XyodFtypR0xCFHyWW9gxqp15oU78njiX
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 153.52.92.81
-  port: 2086
-  udp: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: 156.67.63.231
   port: 443
   udp: true
@@ -43,7 +17,7 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -55,7 +29,14 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 206.1.97.61
+  port: 13323
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: XyodFtypR0xCFHyWW9gxqp15oU78njiX
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: 139.28.240.68
   port: 2086
   udp: true
@@ -72,8 +53,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,7 +62,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 rules:
 - MATCH,PROXIES

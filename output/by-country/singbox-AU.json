@@ -4,17 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "82.198.246.233",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "104.24.34.193",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
+      "server": "208.103.161.5",
       "server_port": 443,
       "uuid": "d042a74a-c305-4eec-a89f-39a348022c92",
       "tls": {
@@ -28,11 +20,19 @@
       },
       "transport": {
         "type": "ws",
-        "path": "ws ",
+        "path": "/",
         "headers": {
           "Host": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
         }
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+      "server": "82.198.246.97",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "vless",

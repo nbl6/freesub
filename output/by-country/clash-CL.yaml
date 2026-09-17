@@ -1,0 +1,147 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇱 智利 (Chile) 01 - xiaohe
+  server: 184.168.47.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime40.workers.dev
+- name: 🇨🇱 智利 (Chile) 02 - xiaohe
+  server: 195.26.229.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇱 智利 (Chile) 03 - xiaohe
+  server: fi1.zuoai.cf
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇱 智利 (Chile) 04 - xiaohe
+  server: 91.209.253.68
+  port: 443
+  udp: true
+  type: vless
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  tls: true
+  servername: nb.lovecf.ggff.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇱 智利 (Chile) 05 - xiaohe
+  server: 172.66.44.124
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  tls: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /9BozNyvQ8VdRvsYX?ed=2560fp=randomized
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇨🇱 智利 (Chile) 06 - xiaohe
+  server: 104.18.41.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇨🇱 智利 (Chile) 07 - xiaohe
+  server: 91.209.253.109
+  port: 443
+  udp: true
+  type: vless
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  tls: true
+  servername: nb.lovecf.ggff.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇱 智利 (Chile) 08 - xiaohe
+  server: teddy.automizely.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇱 智利 (Chile) 01 - xiaohe
+  - 🇨🇱 智利 (Chile) 02 - xiaohe
+  - 🇨🇱 智利 (Chile) 03 - xiaohe
+  - 🇨🇱 智利 (Chile) 04 - xiaohe
+  - 🇨🇱 智利 (Chile) 05 - xiaohe
+  - 🇨🇱 智利 (Chile) 06 - xiaohe
+  - 🇨🇱 智利 (Chile) 07 - xiaohe
+  - 🇨🇱 智利 (Chile) 08 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇱 智利 (Chile) 01 - xiaohe
+  - 🇨🇱 智利 (Chile) 02 - xiaohe
+  - 🇨🇱 智利 (Chile) 03 - xiaohe
+  - 🇨🇱 智利 (Chile) 04 - xiaohe
+  - 🇨🇱 智利 (Chile) 05 - xiaohe
+  - 🇨🇱 智利 (Chile) 06 - xiaohe
+  - 🇨🇱 智利 (Chile) 07 - xiaohe
+  - 🇨🇱 智利 (Chile) 08 - xiaohe
+rules:
+- MATCH,PROXIES
