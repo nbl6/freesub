@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 4e32f662-01da-4dad-bf33-ee17f578d118
+  uuid: 05819bb1-2975-473c-a51f-0fbccf8d2cfa
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -17,19 +17,6 @@ proxies:
   servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 31.56.189.27
-  port: 2087
-  udp: true
-  type: vless
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  tls: true
-  servername: srv-21bac9.vless.monster
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 78.40.195.140
   port: 443
   udp: true
@@ -42,6 +29,18 @@ proxies:
     short-id: 98096455d963bdbb
   servername: www.booking.com
   client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  server: srv-21bac9.vless.monster
+  port: 2087
+  udp: true
+  type: vless
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  tls: true
+  servername: srv-21bac9.vless.monster
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: freegrpc
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: 130.49.161.70
   port: 443
@@ -67,7 +66,7 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 85.204.107.181
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
