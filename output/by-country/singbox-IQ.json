@@ -1,0 +1,70 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ezaccess-project-f62c30.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "ezaccess-project-f62c30.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 02 - xiaohe",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "527451fe-ee1f-4e6f-94ca-808f055f7c9b",
+      "transport": {
+        "type": "ws",
+        "path": "/vl/ERYN0G44hia16zhR",
+        "headers": {
+          "Host": "05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇶 IQ 01 - xiaohe",
+        "🇮🇶 IQ 02 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇶 IQ 01 - xiaohe",
+        "🇮🇶 IQ 02 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
