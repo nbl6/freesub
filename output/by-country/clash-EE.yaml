@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 212.87.190.124
-  port: 99
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 6nQnSKAxCLJSZbg7KA94QA
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.135
   port: 443
   udp: true
@@ -20,6 +13,14 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 217.60.182.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   server: 94.183.170.147
   port: 8443
@@ -44,23 +45,21 @@ proxies:
   sni: russiapower.accesscam.org
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 217.60.182.79
+  server: ee1.sferavpn.pro
   port: 443
   udp: true
   type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ee1.sferavpn.pro
   skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 94.183.170.135
-  port: 8443
+  server: 212.87.190.124
+  port: 3
   udp: true
   type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  uuid: 6049e972-419e-43bc-932c-4032be6d1b5b
 proxy-groups:
 - name: PROXIES
   type: select
