@@ -6,39 +6,17 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "6cc29a05-4828-4e48-a34a-20b7ada60e85",
+      "server": "194.87.59.104",
+      "server_port": 2085,
+      "uuid": "7b07d862-b698-47c1-884b-3e7dd6c8b862",
       "transport": {
-        "type": "ws",
-        "path": "/OAZko425kNFF0PpQ",
-        "headers": {
-          "Host": "testmikonim.hydrymhmdamyn7.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "188.114.96.0",
-      "server_port": 443,
-      "uuid": "20836693-ea23-4f40-a1e7-48a6da897917",
-      "tls": {
-        "enabled": true,
-        "server_name": "netra-85a0ca.shoameni19.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/VKec4m2dLHFngRv9xsOhnj9ZLjotNh?ed=2560",
-        "headers": {
-          "Host": "netra-85a0ca.shoameni19.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
       "server": "194.87.59.13",
       "server_port": 2085,
       "uuid": "6687af93-eb39-47a3-9a73-0f79234ef507",
@@ -49,9 +27,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
-      "server": "164.92.147.213",
-      "server_port": 2087,
+      "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
+      "server": "165.232.39.212",
+      "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -64,49 +42,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/city/my?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 05 - xiaohe",
-      "server": "89.110.66.154",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/streams/home?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 06 - xiaohe",
-      "server": "64.225.110.247",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/acg/buy/ajax?ed=2560fp=chrome",
+        "path": "/html/shows?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -119,10 +55,7 @@
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
         "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe",
-        "🇨🇿 捷克 (Czech) 04 - xiaohe",
-        "🇨🇿 捷克 (Czech) 05 - xiaohe",
-        "🇨🇿 捷克 (Czech) 06 - xiaohe"
+        "🇨🇿 捷克 (Czech) 03 - xiaohe"
       ]
     },
     {
@@ -131,10 +64,7 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
         "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe",
-        "🇨🇿 捷克 (Czech) 04 - xiaohe",
-        "🇨🇿 捷克 (Czech) 05 - xiaohe",
-        "🇨🇿 捷克 (Czech) 06 - xiaohe"
+        "🇨🇿 捷克 (Czech) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
