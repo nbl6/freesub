@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 138.68.142.165
-  port: 2053
+  server: 130.17.27.204
+  port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -16,10 +16,52 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /resource/channel?ed=2560
+    path: /player/shop?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  server: 194.154.29.139
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /retrieve/txt?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  server: 103.31.77.108
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /channels/act
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  server: 185.113.223.183
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /channels/act
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
   server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
@@ -31,7 +73,7 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +81,9 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +91,8 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
 rules:
 - MATCH,PROXIES
