@@ -25,19 +25,16 @@ proxies:
   servername: at.quattro-tech.ru
   client-fingerprint: chrome
 - name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  server: 132.243.203.243
-  port: 8443
+  server: austria-dedic1.failspace.top
+  port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: austria-dedic1.failspace.top
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /archive?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
