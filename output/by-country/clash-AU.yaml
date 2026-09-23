@@ -26,15 +26,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  server: 172.105.169.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 172.105.169.70
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   server: 34.87.229.148
   port: 443
   udp: true
@@ -46,6 +37,14 @@ proxies:
     short-id: 8a7d5e0248cdb1b1
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: whatsapp.com
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   server: 34.87.244.111
   port: 443
@@ -57,13 +56,28 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: ios
 - name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  server: nova.freshnet.ir
+  port: 2082
+  udp: true
+  type: vless
+  uuid: ce2bd817-7fb1-4b94-8125-d6161de31962
+  tls: true
+  servername: nova.freshnet.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cats/FslNz
+    headers:
+      Host: nova.freshnet.ir
+- name: 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
   server: au1.gsafevpnapi.com
   port: 20270
   udp: true
   type: vless
-  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
+  uuid: 52e89791-cc65-4cdb-9d3a-7c06df9f6ebd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -82,6 +96,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,5 +108,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
