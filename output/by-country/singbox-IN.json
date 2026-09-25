@@ -4,28 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "35.154.58.87",
+      "server": "148.113.5.44",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-in-001.fastervpn.world",
-        "insecure": true
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
+        }
       }
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 02 - xiaohe",
-      "server": "tttyder.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "tttyder.wsone.icu",
-        "insecure": false
-      }
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "vless",
@@ -38,7 +43,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -48,41 +53,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 04 - xiaohe",
-      "server": "hyfuuf6.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
-      "server": "148.113.5.44",
-      "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 06 - xiaohe",
+      "tag": "🇮🇳 印度 (India) 04 - xiaohe",
       "server": "139.84.166.47",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -96,9 +68,7 @@
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
         "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe",
-        "🇮🇳 印度 (India) 05 - xiaohe",
-        "🇮🇳 印度 (India) 06 - xiaohe"
+        "🇮🇳 印度 (India) 04 - xiaohe"
       ]
     },
     {
@@ -108,9 +78,7 @@
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
         "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe",
-        "🇮🇳 印度 (India) 05 - xiaohe",
-        "🇮🇳 印度 (India) 06 - xiaohe"
+        "🇮🇳 印度 (India) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
