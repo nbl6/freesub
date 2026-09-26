@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 82.198.246.9
+  server: 82.198.246.233
   port: 180
   udp: true
   type: vmess
@@ -13,43 +13,15 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  server: 104.18.155.229
+  server: 172.105.169.70
   port: 443
   udp: true
   type: vless
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /au-do
-    headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+  servername: 172.105.169.70
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  server: 104.129.164.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime40.workers.dev
-- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  server: 45.192.224.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime17.workers.dev
-- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   server: 51.161.204.244
   port: 443
   udp: true
@@ -70,8 +42,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,7 +50,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
