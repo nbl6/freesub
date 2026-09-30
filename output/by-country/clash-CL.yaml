@@ -4,32 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
-  server: 104.21.14.116
+- name: 🇨🇱 智利 (Chile) 01 - xiaohe
+  server: 34.176.187.219
   port: 443
   udp: true
   type: vless
-  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
+  uuid: ad5325f8-f0b3-41c4-a561-113529b60e70
   tls: true
-  servername: ez-4b5fd4.appelidmymat.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc
+    short-id: 2c2d919f5183d0b7
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-4b5fd4.appelidmymat.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇨🇱 智利 (Chile) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇨🇱 智利 (Chile) 01 - xiaohe
 rules:
 - MATCH,PROXIES

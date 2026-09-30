@@ -5,107 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: 104.21.83.106
+  server: 50.7.5.166
   port: 443
   udp: true
   type: vless
-  uuid: 8c67c0c5-9ed8-4c7d-8e13-b1008b32ec52
-  tls: true
-  servername: einiorufwu6qe0p5fud9moci2i8.dbwyt3mzulwfqoqe2ehpst3vxlr.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/o4uUi3sPnbWX6BR7AFbW4f?ed=2560
-    headers:
-      Host: einiorufwu6qe0p5fud9moci2i8.dbwyt3mzulwfqoqe2ehpst3vxlr.workers.dev
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  server: 3.9.135.156
-  port: 51847
-  udp: true
-  type: vless
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: 0eec442e7b34d2f2
-  servername: www.tesla.com
-  client-fingerprint: chrome
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
-  server: port2.axiomed.ir
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1e534c59-85c2-4042-a407-e491f68cb3a5
-  tls: true
-  servername: kjz42cni3-krcuj2-gqs8ves15.fornewiran-1010.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vl/Z8Ag5xQbwmhIHsvyDj3
-    headers:
-      Host: kjz42cni3-krcuj2-gqs8ves15.fornewiran-1010.workers.dev
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: daf485ba-60fc-4166-a72c-8d2a5407cbc5
-  network: ws
-  ws-opts:
-    path: /vl/zM8ELyqEIYeZ3ijacV9kuK?ed
-    headers:
-      Host: kievh9yxcgg14-gy4wxqcav0pegkd.d-0ezpk5xp5wk8ltdgb6evlpgc-jin.workers.dev
-- name: 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  server: 172.67.203.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
-  tls: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR
-    headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
-  server: port2.axiomed.ir
-  port: 443
-  udp: true
-  type: vless
-  uuid: d443c411-85e4-4e0e-8251-2294d7e7ae0b
-  tls: true
-  servername: jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vl/II2kyrr06FWkCZfkFs?ed=2560
-    headers:
-      Host: jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev
+  servername: ekb.eg
+  skip-cert-verify: true
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
