@@ -16,16 +16,18 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: ttww11.bpca2026.top
-  port: 443
+  server: tw6.dexlos.com
+  port: 8080
   udp: true
-  type: trojan
-  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
-  sni: ttww11.bpca2026.top
+  type: tuic
+  uuid: D7286728-678E-443B-B76B-B699654C66DD
+  password: D7286728-678E-443B-B76B-B699654C66DD
+  sni: tw6.dexlos.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /images
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
 proxy-groups:
 - name: PROXIES
   type: select
